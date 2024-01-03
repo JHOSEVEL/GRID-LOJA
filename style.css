@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    background-color: azure;
+}
+.container1{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 2fr;
+    gap: 10px;
+}
+.container-2{
+    margin-top: 50px;
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header h1{
+    text-transform: uppercase;
+    margin-left: 25px;
+    color: rgb(56, 55, 55);
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+}
+nav a{
+    font-size: 1.3em;
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #636161cd;
+}
+
+.meus-produtos{
+    width: 100%;
+    height: 100vh;
+    gap: 10px;
+}
+.banner{
+    background-color: rgba(255, 192, 203, 0.568);
+    width: 100%;
+    height: 70vh;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.img{
+    display: block;
+    margin-left: 15px;
+}
+.banner img{
+    width: 100%;
+}
+.banner h2{
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 100px;
+    text-transform: uppercase;
+}
+
+/*loja*/
+.container-2{
+    display: flex;
+    width: 100%;
+    position: relative;
+
+}
+.produtos{
+    width: 100%;
+    height: 400px;
+    margin-left: 10px;
+    display: block;
+
+}
+.produtos img{
+    width: 100%;
+
+}
+.titulo{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.titulo h2{
+    padding-bottom: 8px;
+    border-bottom: 2px solid red;
+    width: 100%;
+}
+.container-2 button{
+    padding: 3PX;
+    text-transform: uppercase;
+    background-color: rgba(125, 202, 8, 0.793);
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+/*mobile*/
+
+@media screen and (max-width:640px){
+
+   .container1{
+    display: block;
+    position: absolute;
+    
+   }
+    .container {
+        position: relative;
+    }
+    
+    .banner p{
+        margin-top: -80px;
+        display:flex;
+        position: absolute;
+        margin-left: 10px;
+    }
+    .banner h2{
+        margin-top: -340px;
+        position: absolute;
+    }
+    .banner img{
+        width: 230px;
+        margin-top: 260px;
+        position: relative;
+        display: flex;
+        margin-left: 60px;
+    }
+    .container-2{
+        display: block;
+    }
+    .container-2 img{
+        width: 380px;
+        height: 300px;
+        margin-left: 2px;
+    }
+    .meus-produtos{
+        height: 100%;
+        margin-top: 10px;
+    }
+    .container header{
+        flex-direction: column;
+    }
+    header nav a{
+        margin-top: -40px;
+        padding-bottom: 20px;
+        display: flex;
+    }
+}
+/*tablet*/
+
+@media screen and (min-width:641px) and (max-width:1023px){
+    .meus-produtos{
+        width: 100%;
+        height: 100vh;
+       
+    }
+  .titulo h2{
+    width: 90%;
+    position: absolute;
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+  }
+  .container-2{
+    height: 100vh;
+    display: grid;
+    grid-row: 2fr 2fr;
+    grid-template-columns: 2fr 2fr;
+  }
+  .container-2 img{
+    width: 90%;
+    height: 150px;
+    display: block;
+    max-width: 250px;
+    padding-bottom: 5px;
+  }
+  .produtos{
+    width: 100%;
+    height: 230px;
+    display: block;
+  }
+  .produtos p{
+    width: 90%;
+    padding-bottom: 5px;
+  }
+   
+}
